@@ -9,7 +9,7 @@
 
 # Introduction
 
-This Opencart module provides an easy method to integrate with the payment gateway.
+This OpenCart module provides an easy method to integrate with the payment gateway.
  - Supports Open versions: **3.X**
 
 # Prerequisites
@@ -25,7 +25,7 @@ This Opencart module provides an easy method to integrate with the payment gatew
 2. Navigate to the Extensions dropdown -> Extensions -> Payment methods -> Cardstream and click 'Activate'
 3. Navigate to the Extensions dropdown -> Extensions -> Payment methods -> Cardstream and click the 'Edit' button
 4. Enter your MerchantID / Secretkey and update the customer/country code
-5. Selects what type of integration you would like to use
+5. Select what type of integration you would like to use
 6. Set what status you would like to update an order to once paid
 7. Set the Enabled option to true
 8. Click 'Save Changes'
