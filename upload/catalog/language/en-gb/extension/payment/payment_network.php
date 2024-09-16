@@ -2,12 +2,8 @@
 // Heading
 $_['heading_title'] = 'Thank you for shopping with %s .... ';
 
-// $_['form_hosted_url'] = 'https://gateway.cardstream.com/hosted/';
-// $_['form_hosted_modal_url'] = 'https://gateway.cardstream.com/hosted/modal';
-// $_['form_direct_url'] = 'https://gateway.cardstream.com/direct/';
-
 // Text
-$_['text_title']        = 'Credit Card / Debit Card (Payment Network)';
+$_['text_title']        = 'Credit or Debit Card';
 $_['text_response']     = 'Response from Payment Network:';
 $_['text_success']      = '... your payment was successfully received.';
 $_['text_success_wait'] =

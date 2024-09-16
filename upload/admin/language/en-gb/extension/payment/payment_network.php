@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title'] = 'Payment Network';
+$_['heading_title'] = 'Credit or Debit Card';
 
 // Text
 $_['text_edit'] = "Edit Payment Network Settings";

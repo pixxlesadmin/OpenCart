@@ -244,17 +244,19 @@ class ControllerExtensionPaymentPaymentNetwork extends Controller
                 $bill_address .= "\n". str_replace('&amp;', '&', $order[$item]);
             }
         }
-
+               
         $params = array(
             "action" => "SALE",
             "merchantID" => $merchant_id,
             "amount" => $amount,
             'type' => 1,
-            "countryCode" => $order['payment_iso_code_2'],
             "currencyCode" => $order['currency_code'],
-            "transactionUnique" => $trans_id,
+            'transactionUnique'   => uniqid('oc_order_' . $trans_id . "-"),
             "orderRef" => "Order " . $trans_id,
             "customerName" => $bill_name,
+            "customerCountryCode" => $order['payment_iso_code_2'],
+            'customerTown' => $order['payment_city'],
+            'customerCounty' => $order['payment_zone'],
             "customerAddress" => $bill_address,
             "customerPostCode" => $order['payment_postcode'],
             "customerEmail" => $order['email'],
@@ -263,7 +265,6 @@ class ControllerExtensionPaymentPaymentNetwork extends Controller
             "item1Quantity" => 1,
             "item1GrossValue" => $amount,
             "formResponsive" => $form_responsive,
-            'merchantCategoryCode' => 5411,
             'customerOCSESSID' => $this->session->getId()
         );
 
